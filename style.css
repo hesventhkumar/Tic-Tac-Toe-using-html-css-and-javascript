@@ -1,0 +1,87 @@
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 5px solid rgb(3, 133, 90); 
+    box-shadow: 0 0 0 2px rgb(2, 140, 89);
+    line-height: 75px;
+    font-size: 50px;
+    cursor: pointer;
+    background-color:rgb(246, 246, 102); 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+.cell:hover {
+    background-color:rgb(255, 172, 5); 
+    transform: scale(1.1);
+}
+#gamecontainer {
+    font-family: "Teko", sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color:white; 
+}
+#cellcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 340px;
+    margin: auto;
+}
+body {
+    background-image: linear-gradient(to right,rgb(14, 72, 60),rgb(2, 255, 196)); 
+}
+h2{
+    color: rgb(41, 50, 50);
+}
+#restartbtn {
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    background-color: red; 
+    border-style: none;
+    color:white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+#restartbtn:hover {
+    background-color:rgb(192, 5, 5);
+    transform: scale(1.1); 
+}
+
+@media screen and (max-width: 1024px) {
+    .cell {
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 40px;
+    }
+
+    #cellcontainer {
+        width: 180px;
+    }
+
+    #restartbtn {
+        width: 90px;
+        height: 30px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .cell {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 30px;
+    }
+
+    #cellcontainer {
+        width: 150px;
+    }
+
+    #restartbtn {
+        width: 80px;
+        height: 28px;
+        font-size: 14px;
+    }
+}
